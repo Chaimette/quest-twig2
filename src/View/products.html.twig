@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Products list</title>
+</head>
+<body>
+    <h1>List of books</h1>
+    <ul>
+        {% for product in products %}
+            <li>{{ product }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Dump du tableau de produits</h2>
+    <pre>
+        {{ dump(products) }}
+    </pre>
+</body>
+</html>
